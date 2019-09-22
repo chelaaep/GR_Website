@@ -1,13 +1,81 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
 }
+
+#header
+{
+    text-align: center;
+    font-size: 4vw;
+    height: 600px;
+    width: 100%;
+}
+
+.welcome {
+    position: relative;
+    top: 200px;
+  
+}
+
+ .navbar
+{
+  top: 500px;
+  text-align: center;
+  font-size: 2vw;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-spacing: 50px; 
+  overflow: hidden;
+  background-color: white;
+}
+ul li {
+    display: inline-block;
+    #border: 3px solid gray;
+    padding: 5px 5px;
+}
+
+ul.navbar li a 
+{
+  display: block;
+  color: grey;
+  text-decoration: none;
+ 
+}
+
+ 
+
+ {
+   im
+  }
+
 #footer 
 {
 background-color: black;
-margin: 0;
+padding: 100px;
+margin: 0%;
+bottom: 0%;
 }
-#footer social
+
+.social {
+    text-align: center;
+    border: 1px solid black;
+}
+.social img {
+    width: 32px;
+    height: auto;
+    margin: 5px;
+}
+.copyright 
+{
+    color: white;
+}
+
+@media only screen and (max-width: 800px) 
 {
 
 }
+
+
