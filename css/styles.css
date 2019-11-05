@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none; 
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
+    
+.header {
+    
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    #background-color: lightsalmon;
+    width: 100%;
+    padding: 17% 5% 2%;
+    
+    }
+
+.headerwork {
+    
+    text-align: left;
+    font-size: 2vw;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    background-color:#F58982;
+    width: 100%;
+    padding: 3%;
+    color: white;
+        
+        }
+
+.workdesc {
+    font-size: 1.5vw;
+    text-align: center;
+    color: grey;
+    height: 10%;
+    padding: 1% 0% 6%;
+          }
+
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0px;
+}
+
+.navbar {
+  z-index: 500;
+  text-align: center;
+  font-size: 1.2vw;
+  letter-spacing: 5px;
+  word-spacing: 40px; 
+  overflow: hidden;
+  background-color:white;
+  #position: -webkit-sticky; /* Safari */
+  #position: sticky;
+  #top: 0;
+}
+
+
+ul li a{
+    color: grey;
+    #border: 3px solid gray;
+    #margin: 20px 20px;
+    #padding: 10px 10px;
+    float: left;
+
+
+}
+ul li a:hover{
+    color: #F58982;
+}  
+
+ul li {
+    z-index: 500;
+    display: inline-block;
+  
+}
+
+
+#space {
+    height:220px;
+    #background-color: black;
+}
+
+#portfoliospace {
+    height:30px;
+    width: 100%;
+    #background-color: black;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+#left{
+    width: 60%;
+    float:left;
+    padding: 5%;
+    #background:blue;
+    position: relative;
+
+}
+
+#right{
+    width: 40%;
+    padding: 5% 0% 20%;
+    float:right;
+    #background: #F58982;
+    position: relative;
+}
+
+#right h2 {
+    color:black;
+    font-size: 3vw;
+}
+
+#right p {
+    color:grey;
+    font-size: 1.8vw;
+}
+
+.right img{
+  #transition 1s;
+  #overflow: hidden;
+}
+
+.right img:hover{
+  #transform: scale(1.1)
+}
+
+
+div.gallery {
+   
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 32%;
+    
+  
+  }
+  
+div.gallery:hover {
+    #border: 1px solid #777;
+    #opacity: 0.5;
+    #transform scale(1.1);
+    filter: contrast(70%);
+  
+  }
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+    #opacity: 1;
+    filter: contrast(100%);
+  }
+  
+div.desc {
+    padding: 10px;
+    text-align: center;
+  }
+
+#image_001{
+
+   size: 70%;
+   #float: left;
+  }
+
+.image {
+    float:left;
+  }
+
+  #footer 
+{
+  background-color: black;
+  padding: 50px;
+  margin: 0%;
+  bottom: 0%;
+  width: 100%;
+  bottom: 0px;
+  #position: fixed;
+  
+}
+
+.social {
+  text-align: center;
+  border: 1px solid black;
+}
+.social img {
+  width: 32px;
+  height: auto;
+  margin: 5px;
+}
+.copyright 
+{
+    color: white;
+    text-align: center;
+}
+
+.nextb{
+  #background-color: #F58982;
+  bottom: 50px;
+  right: 30px;
+  position: fixed;
+}
+
+.nextb img{
+ height: 30px;
+ width: 30px;
+  }
+
+.backb{
+  #background-color: #F58982;
+  bottom: 50px;
+  left: 20px;
+  position: fixed;
+    }
+    
+.backb img{
+  height: 30px;
+  width: 30px;
+      }
