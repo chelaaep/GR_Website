@@ -31,7 +31,7 @@ html{
     letter-spacing: 3px;
     background-color:#F58982;
     width: 100%;
-    padding: 3%;
+    padding: 3% ;
     color: white;
         
         }
@@ -99,12 +99,20 @@ img {
     width: 100%;
 }
 
+#main{
+  width: 100%;
+ 
+  padding: 5%
 
+}
+#main img{
+  width:100%
+}
 
 #left{
     width: 60%;
     float:left;
-    padding: 5%;
+    padding:0 5%;
     #background:blue;
     position: relative;
 
