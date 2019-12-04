@@ -1,11 +1,38 @@
+
+
 *{
     margin: 0;
     padding: 0;
     text-decoration: none; 
     list-style-type: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
+    font-family: Montserrat;
+   
 }
+
+@font-face {
+  font-family:Montserrat;
+  src: url(fonts/Montserrat-Light.ttff);
+  font-weight: 300;
+}
+@font-face {
+  font-family:Montserrat;
+  src: url(fonts/Montserrat-Regular.ttff);
+  font-weight: 400;
+}
+@font-face {
+  font-family:Montserrat;
+  src: url(fonts/Montserrat-Bold.ttff);
+  font-weight: 700;
+}
+@font-face {
+  font-family:Montserrat;
+  src: url(fonts/Montserrat-Black.ttff);
+  font-weight: 900;
+}
+
+
+
 
 html{
   height: 100%;
@@ -14,10 +41,9 @@ html{
 .header {
     
     text-align: center;
-    font-size: 5vw;
-    font-weight: bolder;
+    font-weight: 900;
+    font-size: 4vw;
     letter-spacing: 3px;
-    #background-color: lightsalmon;
     width: 100%;
     padding: 17% 5% 2%;
     
@@ -27,7 +53,7 @@ html{
     
     text-align: left;
     font-size: 2vw;
-    font-weight: bolder;
+    font-weight: 300;
     letter-spacing: 3px;
     background-color:#F58982;
     width: 100%;
@@ -35,6 +61,11 @@ html{
     color: white;
         
         }
+
+h1{
+  font-family: Montserrat;
+  font-weight: 900;
+}
 
 .workdesc {
     font-size: 1.5vw;
@@ -236,3 +267,6 @@ div.desc {
   height: 30px;
   width: 30px;
       }
+}
+
+}
