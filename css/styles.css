@@ -3,11 +3,11 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none; 
+    text-decoration: none;
     list-style-type: none;
     box-sizing: border-box;
     font-family: Montserrat;
-   
+
 }
 
 @font-face {
@@ -32,25 +32,40 @@
 }
 
 
-
-
 html{
-  height: 100%;
+  min-height: 100%;
+  position: relative;
 }
-    
+
+body {
+  margin: 0 0 190px;
+}
+
+main {
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.gallery {
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
 .header {
-    
+
     text-align: center;
     font-weight: 900;
-    font-size: 4vw;
-    letter-spacing: 3px;
+    #font-size: ;
     width: 100%;
-    padding: 17% 5% 2%;
-    
+    padding: 75px 5% 2%;
+
     }
 
 .headerwork {
-    
+
     text-align: left;
     font-size: 2vw;
     font-weight: 300;
@@ -59,7 +74,7 @@ html{
     width: 100%;
     padding: 3% ;
     color: white;
-        
+
         }
 
 h1{
@@ -68,11 +83,13 @@ h1{
 }
 
 .workdesc {
-    font-size: 1.5vw;
+    max-width: 730px;
+    font-size: 12pt;
     text-align: center;
     color: grey;
     height: 10%;
-    padding: 1% 0% 6%;
+    padding: 2% 20px 6%;
+    margin: 0 auto;
           }
 
 .sticky {
@@ -82,11 +99,12 @@ h1{
 }
 
 .navbar {
+  margin-top: 10px;
   z-index: 500;
   text-align: center;
-  font-size: 1.2vw;
+  font-size: 12pt;
   letter-spacing: 5px;
-  word-spacing: 40px; 
+  #word-spacing: 35px;
   overflow: hidden;
   background-color:white;
   #position: -webkit-sticky; /* Safari */
@@ -106,18 +124,19 @@ ul li a{
 }
 ul li a:hover{
     color: #F58982;
-}  
+}
 
 ul li {
     z-index: 500;
     display: inline-block;
-  
+    margin-left: 25px;
 }
 
 
 #space {
     height:220px;
     #background-color: black;
+    padding-right: 15px;
 }
 
 #portfoliospace {
@@ -132,7 +151,7 @@ img {
 
 #main{
   width: 100%;
- 
+
   padding: 5%
 
 }
@@ -159,12 +178,19 @@ img {
 
 #right h2 {
     color:black;
-    font-size: 3vw;
+    #font-size: 3vw;
+    margin-bottom: 15px;
+    padding: 0 15px;
 }
 
 #right p {
     color:grey;
-    font-size: 1.8vw;
+    font-size: 12pt;
+    padding: 0 15px;
+}
+
+.min {
+  display: none;
 }
 
 .right img{
@@ -177,31 +203,29 @@ img {
 }
 
 
-div.gallery {
-   
-    margin: 5px;
+div.responsive {
+
     border: 1px solid #ccc;
     float: left;
-    width: 32%;
-    
-  
+    width: 31.31%;
+    margin: 1%;
   }
-  
-div.gallery:hover {
+
+div.responsive:hover {
     #border: 1px solid #777;
     #opacity: 0.5;
     #transform scale(1.1);
     filter: contrast(70%);
-  
+
   }
-  
-div.gallery img {
+
+div.responsive img {
     width: 100%;
     height: auto;
     #opacity: 1;
     filter: contrast(100%);
   }
-  
+
 div.desc {
     padding: 10px;
     text-align: center;
@@ -217,16 +241,14 @@ div.desc {
     float:left;
   }
 
-  #footer 
-{
+  #footer {
+  position: absolute;
   background-color: black;
   padding: 50px;
-  margin: 0%;
-  bottom: 0%;
+  margin: 0;
+  bottom: 0;
   width: 100%;
-  bottom: 0px;
-  #position: fixed;
-  
+  overflow: hidden;
 }
 
 .social {
@@ -238,7 +260,7 @@ div.desc {
   height: auto;
   margin: 5px;
 }
-.copyright 
+.copyright
 {
     color: white;
     text-align: center;
@@ -262,11 +284,56 @@ div.desc {
   left: 20px;
   position: fixed;
     }
-    
+
 .backb img{
   height: 30px;
   width: 30px;
       }
-}
 
+
+@media only screen and (max-width: 750px) {
+  div.responsive {
+      border: 1px solid #ccc;
+      float: left;
+      width: 100%;
+      margin: 10px 0;
+    }
+
+  /*  .navbar {
+      font-size: 12pt;
+      width: 100%;
+      box-sizing: border-box;
+      display: inline-grid;
+      padding: 0;
+      margin: 0;
+    }*/
+
+    .navbar li {
+      float: left;
+      width: 50%;
+      margin: 0;
+      padding: 7px 0;
+    }
+    .navbar ul {
+      width: 100%;
+    }
+
+     li a {
+      display: block;
+      width: 100%;
+    }
+
+
+    #left, #right {
+      width: 100%;
+      padding: 20px 0;
+    }
+
+    .max {
+      display: none;
+    }
+
+    .min {
+      display: inherit;
+    }
 }
