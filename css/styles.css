@@ -115,9 +115,6 @@ h1{
 
 ul li a{
     color: grey;
-    #border: 3px solid gray;
-    #margin: 20px 20px;
-    #padding: 10px 10px;
     float: left;
 
 
@@ -134,7 +131,7 @@ ul li {
 
 
 #space {
-    height:220px;
+    height:120px;
     #background-color: black;
     padding-right: 15px;
 }
@@ -299,15 +296,7 @@ div.desc {
       margin: 10px 0;
     }
 
-  /*  .navbar {
-      font-size: 12pt;
-      width: 100%;
-      box-sizing: border-box;
-      display: inline-grid;
-      padding: 0;
-      margin: 0;
-    }*/
-
+/*
     .navbar li {
       float: left;
       width: 50%;
@@ -328,12 +317,23 @@ div.desc {
       width: 100%;
       padding: 20px 0;
     }
-
+*/
     .max {
       display: none;
     }
 
     .min {
-      display: inherit;
+      display: block;
     }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    font-size: 10pt;
+  }
+
+  ul li {
+    margin: 0;
+    border-right: .5px grey solid;
+  }
 }
