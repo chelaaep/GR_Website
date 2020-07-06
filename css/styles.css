@@ -38,7 +38,7 @@ html{
 }
 
 body {
-  margin: 0 0 190px;
+  #margin: 0 0 190px;
 }
 
 main {
@@ -64,6 +64,31 @@ main {
 
     }
 
+    .header01 {
+
+      text-align: center;
+      color: white;
+      font-weight: 900;
+      width: 100%;
+      position: absolute;
+      z-index: 20;
+      transform:translate(-50%,-50%) ;
+      top: 43% ;
+      left: 50%;
+
+      }
+
+    #videoreel {
+      position: absolute;
+      border :solid palegreen;
+    }      
+
+    .bgvideo {
+    #position: inherit;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    }
 .headerwork {
 
     text-align: left;
@@ -100,7 +125,6 @@ h1{
 
 .navbar {
   margin-top: 10px;
-  z-index: 500;
   text-align: center;
   font-size: 12pt;
   letter-spacing: 5px;
@@ -108,8 +132,9 @@ h1{
   overflow: hidden;
   background-color:white;
   #position: -webkit-sticky; /* Safari */
-  #position: sticky;
+  #position: initial;
   #top: 0;
+  z-index: 500;
 }
 
 
@@ -245,6 +270,7 @@ div.desc {
   margin: 0;
   bottom: 0;
   width: 100%;
+  border: solid red;
   overflow: hidden;
 }
 
@@ -324,8 +350,11 @@ div.desc {
 
     .min {
       display: block;
+    
     }
 }
+
+video
 
 @media only screen and (max-width: 600px) {
   .navbar {
@@ -335,5 +364,27 @@ div.desc {
   ul li {
     margin: 0;
     border-right: .5px grey solid;
-  }
+  
+}
+
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
