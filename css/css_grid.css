@@ -78,6 +78,11 @@ ul img {
  font-size: 2vw;
 }
 
+.credits{
+  padding: 2em 7em;
+  font-size: 12pt;
+}
+
 
 .grid-container {
   
@@ -86,7 +91,7 @@ ul img {
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 2em;
     #background-color: cyan;
-    margin: 0px 7rem;
+    margin: 0px 7em;
     
     
     
@@ -94,7 +99,7 @@ ul img {
   
   .grid-container > div {
     position: inherit;
-    background-color: lightgreen;
+    #background-color: lightgreen;
     #padding: 20px ;
     #font-size: 30px;
     #height: 10px;
