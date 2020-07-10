@@ -121,6 +121,9 @@ ul img {
   width: 100%;
 }
   
+.grid-container iframe{
+  width: 100%;
+}
   .item1{
   grid-column-start: 1;
   grid-column-end:4;
@@ -199,6 +202,7 @@ ul img {
     grid-column-end:7;
     grid-row-start: 1;
     grid-row-end: 2;  
+    width: 100%;
     #align-items: center;
     #justify-items: center;
     #height: 100%;
