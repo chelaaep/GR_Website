@@ -1,3 +1,4 @@
+  
 * {
     font-family: Montserrat;
     margin: 0;
@@ -32,6 +33,7 @@ html{
   position: absolute;
   width: 100%;
   min-height: 100%;
+  background-color: #F6F6F6;
 }
 
 body{
@@ -39,6 +41,12 @@ body{
 }
 
 .sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0px;
+  }
+
+  .stickyres{
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0px;
@@ -55,6 +63,22 @@ body{
   background-color: white;
   z-index: 100;
 }
+
+.navbares{
+  background-color: hotpink;
+  padding: 15px;
+}
+
+label img{
+  height: 30px; ;
+}
+
+input{
+  display: none;
+  position: fixed;
+}
+
+
 
 ul li a{
   color: grey;
@@ -74,7 +98,7 @@ ul img {
 
 
 .header{
- padding: 4em 3em 2em ;
+ padding: 4em 7em 2em ;
  font-size: 2vw;
 }
 
@@ -404,57 +428,78 @@ ul img {
       }
 
 
-    @media screen and (max-width: 800px) {
-        .grid-container {
+      @media screen and (max-width: 800px) {
+
+            body{
+            margin-bottom: 0px;
+            }
+
+            .grid-container {
             margin: 0 1rem;
             display: block;
             grid-gap: 10px;  
-          }
-        ul li {
-              margin: 0;
-              border-right: .5px grey solid;
-              font-size: 20px;
+            }
+            ul li {
+            margin: 0;
+            border-right: .5px grey solid;
+            font-size: 20px;
+            }     
+
+              
+            .footer {
+            position: relative;
+            background-color: black;
+            padding: 3em;
+            bottom: 0px;
+            width: 100%;
+            overflow: hidden;
+            }
+
+            .social{
+            font-weight: lighter;
+            font-size: 10px;
+            text-align: center;
+            color: white;
+            }
+
             
-          }     
-          .social img{
+            .social img{
             height: 35px;
             width: auto;
-           
             }
-        
+          
             .navbar{
-  
-              margin-top: 0px;
-              #padding: 20px;
-              #text-align: center;
-              #font-size: 20px;
-              #letter-spacing: 5px;
-              #overflow: hidden;
-              background-color: solid red ;
-              z-index: 100;
+    
+            display: none;
             }
-            
+
+            .navbares{
+            z-index: 500;
+            background-color: hotpink;
+            }
+
             ul li a {
-              color: grey;
-              float: right;
+            color: grey;
+            float: right;
             }
-            
+              
             ul li {
-              z-index: 500;
-              display: inline-block;
-              #margin-left: 25px;
-              background-color: solid red ;
+            z-index: 500;
+            display: inline-block;
+            #margin-left: 25px;
+            background-color: solid red ;
             }
-            
+              
             ul img {
-              height: 30px;
-              margin-right: 200px
+            height: 30px;
+            margin-right: 200px
+            }
+
+            .credits{
+            
+            padding: 0 20px 0 10px;
+            background-color: indianred;
             }
             
           }
-       
-  
 
-
-        
-          
