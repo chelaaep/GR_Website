@@ -33,7 +33,7 @@ html{
   position: absolute;
   width: 100%;
   min-height: 100%;
-  background-color: #F6F6F6;
+  background-color: white;
 }
 
 body{
@@ -60,24 +60,15 @@ body{
   font-size: 20px;
   #letter-spacing: 5px;
   overflow: hidden;
-  background-color: white;
+  background-color: #F6F6F6;
   z-index: 100;
 }
 
 .navbares{
+  
   background-color: hotpink;
   padding: 15px;
 }
-
-label img{
-  height: 30px; ;
-}
-
-input{
-  display: none;
-  position: fixed;
-}
-
 
 
 ul li a{
@@ -91,14 +82,14 @@ ul li {
   margin-left: 25px;
 }
 
-ul img {
-  height: 30px;
+ul  img {
+  height: 50px;
   margin-right: 200px
 }
 
 
 .header{
- padding: 4em 7em 2em ;
+ padding: 4em 3em 2em ;
  font-size: 2vw;
 }
 
@@ -240,6 +231,7 @@ ul img {
       grid-column-end:7;
       grid-row-start: 2;
       grid-row-end: 3;  
+      padding: 20px 0;
       #align-items: center;
       #justify-items: center;
       #height: 100%;
@@ -404,6 +396,28 @@ ul img {
         #width: 30%;        
       }
 
+      .itemB1{
+        grid-column-start: 5;
+        grid-column-end:7;
+        grid-row-start: 4;
+        grid-row-end: 5;  
+        #align-items: center;
+        #justify-items: center;
+        #height: 100%;
+        #width: 30%;        
+      }
+
+      .itemB2{
+        grid-column-start: 5;
+        grid-column-end:7;
+        grid-row-start: 4;
+        grid-row-end: 5;  
+        #align-items: center;
+        #justify-items: center;
+        #height: 100%;
+        #width: 30%;        
+      }
+
     .footer {
        position: absolute;
         background-color: black;
@@ -427,11 +441,44 @@ ul img {
        
       }
 
+      #links{
+        color: red;
+      }
 
-      @media screen and (max-width: 800px) {
+      input[type=text], textarea {
+        display: block;
+      }
+      
+      .contact-form {
+        width: 100%;
+        display: block;
+      }
+      
+      
+      
+      .responsive1 {
+        display: inline-block;
+        width: 100%;
+        max-width: 900px;
+        margin-bottom: 20px;
+      }
+
+      Input[type=text], textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+        display: block;
+      }
+
+      @media screen and (max-width: 700px) {
 
             body{
-            margin-bottom: 0px;
+            margin-bottom: 150px;
             }
 
             .grid-container {
@@ -439,15 +486,31 @@ ul img {
             display: block;
             grid-gap: 10px;  
             }
-            ul li {
-            margin: 0;
-            border-right: .5px grey solid;
-            font-size: 20px;
-            }     
+
+            
+           
+
+            .itemA2{
+              padding: 1rem 0rem;
+            }
+
+            .itemA4{
+              padding: 1rem 0rem;
+            }
+
+            .itemA6{
+              padding: 1rem 0rem;
+            }
+
+            .header{
+              font-size: 10pt;
+              padding:  3vh  1rem 2vh ;
+            }
+              
 
               
             .footer {
-            position: relative;
+            position: absolute;
             background-color: black;
             padding: 3em;
             bottom: 0px;
@@ -469,36 +532,35 @@ ul img {
             }
           
             .navbar{
+              font-size: 15pt;
+            }
     
-            display: none;
-            }
-
-            .navbares{
-            z-index: 500;
-            background-color: hotpink;
-            }
+          
 
             ul li a {
+            font-size: 10pt;
             color: grey;
             float: right;
+            
             }
               
             ul li {
             z-index: 500;
             display: inline-block;
-            #margin-left: 25px;
+            margin-left: 5px;
             background-color: solid red ;
             }
               
             ul img {
-            height: 30px;
-            margin-right: 200px
+            height: 20px;
+            margin-right: 2px;
+            margin-left: 5px;;
             }
 
             .credits{
             
-            padding: 0 20px 0 10px;
-            background-color: indianred;
+            padding: 30px 20px;
+      
             }
             
           }
