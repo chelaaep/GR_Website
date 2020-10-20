@@ -202,9 +202,21 @@ ul  img {
 
   .item6{
     grid-column-start: 1;
+    grid-column-end:4;
+    grid-row-start: 5;
+    grid-row-end: 6;  
+    #align-items: center;
+    #justify-items: center;
+    #height: 100%;
+    #width: 30%;
+      
+  }
+
+  .item7{
+    grid-column-start: 4;
     grid-column-end:7;
-    grid-row-start: 6;
-    grid-row-end: 7;  
+    grid-row-start: 5;
+    grid-row-end: 6;  
     #align-items: center;
     #justify-items: center;
     #height: 100%;
@@ -262,6 +274,17 @@ ul  img {
       #width: 30%;
     }
     
+    .itemD2{
+    
+      grid-column-start: 1;
+      grid-column-end:7;
+      grid-row-start: 4;
+      grid-row-end: 5;  
+      #align-items: center;
+      #justify-items: center;
+      #height: 100%;
+      #width: 30%;
+    }
     .itemE{
     
       grid-column-start: 3;
